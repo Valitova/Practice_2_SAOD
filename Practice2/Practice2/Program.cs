@@ -93,6 +93,7 @@ namespace Practice2
             Building[] builds = new Building[count];
             Building[] builds1 = new Building[count];
             Stopwatch SW = new Stopwatch();
+            Stopwatch SW1 = new Stopwatch();
             char delimeter = ',';
             try
             {
@@ -125,10 +126,10 @@ namespace Practice2
             builds = Sort(builds);
             SW.Stop();
             Console.WriteLine("{0} : {1} мс.", "Сортировка методом выбора", Convert.ToString(SW.ElapsedMilliseconds));
-            SW.Start();
+            SW1.Start();
             builds1 = Sort1(builds1);
-            SW.Stop();
-            Console.WriteLine("{0} : {1} мс.", "Сортировка методом пересчета", Convert.ToString(SW.ElapsedMilliseconds));
+            SW1.Stop();
+            Console.WriteLine("{0} : {1} мс.", "Сортировка методом пересчета", Convert.ToString(SW1.ElapsedMilliseconds));
             //Print(file2, builds);
             //Print(file3, builds1);
             return true;
